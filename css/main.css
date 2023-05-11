@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+ul li {
+  list-style: none  ;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  color: #FFCB00;
+  font-family: "Segoe UI Black", sans-serif;
+}
+
+.section_link {
+  position: absolute;
+  transform: translateY(-80px);
+}

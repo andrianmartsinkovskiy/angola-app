@@ -1,0 +1,251 @@
+.preview {
+  background: url("../img/angola-mountain.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+.preview > div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0, 0.9), rgba(0,0,0, 0.1), rgba(0,0,0, 0.9));
+}
+
+.preview_content p {
+  font-size: 20px;
+}
+
+.preview_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  height: 100%;
+}
+
+.preview_container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.preview_image {
+  height: 500px;
+  border-radius: 30px;
+}
+
+.preview_content {
+  color: #fff;
+}
+
+.preview_title {
+  margin-bottom: 12px;
+}
+
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about_content {
+  display: grid;
+  row-gap: 10px;
+}
+
+.about_content p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.attractions_title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.attractions_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  padding-bottom: 50px;
+}
+
+.attractions_item {
+  background: #5B5EA6;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.attractions_item img {
+  height: 170px;
+  max-width: 100%;
+}
+
+.attractions_item-title {
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #FFCB00;
+  font-family: "Segoe UI Black", sans-serif;
+  font-size: 24px;
+}
+
+
+.geography {
+  background: url("../img/map.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.geography-text {
+  margin-top: 20px;
+  font-size: 17px;
+  max-width: 800px;
+}
+
+.geography-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+
+.geography-image-wrap {
+  text-align: center;
+  position: relative;
+}
+
+.geography-image-wrap img {
+  width: 100%;
+  border-radius: 4px;
+  height: 100%;
+}
+
+.geography-image-title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  font-size: 14px;
+  color: #CC092F;
+  font-family: "Segoe UI Black", sans-serif;
+  border: 1px solid #CC092F;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.cultural {
+  padding: 50px 0;
+}
+
+.cultural-title {
+  text-align: center;
+}
+
+.cultural-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.cultural-content {
+  text-align: center;
+  display: flex;
+  row-gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cultural-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cultural-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.celebrations {
+  padding: 50px 0;
+  background: #5B5EA6;
+  color: #fff;
+}
+
+.celebrations-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+  text-align: center;
+  row-gap: 30px;
+}
+
+.celebrations-image {
+  width: 100%;
+  height: 220px;
+}
+
+.celebrations-title {
+  margin-top: 10px;
+  margin-bottom: 7px;
+  font-family: "Segoe UI Black", sans-serif;
+}
+
+.celebrations-wrap-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px){
+  .geography-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .geography-text {
+    margin: 0 auto;
+  }
+
+  .attractions_wrap {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .preview_image-wrap {
+    display: none !important;
+  }
+
+  .preview_container, .attractions_wrap, .celebrations-container, .cultural-container {
+    grid-template-columns: 1fr;
+  }
+
+  .attractions_wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .attractions_item, .geography-text {
+    max-width: 400px;
+    margin: 10px auto;
+  }
+
+  .celebrations-image {
+    height: inherit;
+    width: 400px;
+    max-width: 100%;
+  }
+}
